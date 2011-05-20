@@ -22,10 +22,6 @@ set(ARDUINO_TYPE "arduino_diecimila")
 rosbuild_find_ros_package(avr_bridge)
 include(${avr_bridge_PACKAGE_PATH}/arduino_cmake/avrbuild.cmake)
 
-file(GLOB AVR_ROS_SRC
-    "src/avr_ros/*.cpp"
-)
-
 
 set(PROJECT_SRC src/main.cpp src/avr_ros_user.cpp)
 
